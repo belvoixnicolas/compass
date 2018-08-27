@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 104, icons/*.png */
 .icons-sprite, .icons-fb-off, .icons-fb-on, .icons-ig-off, .icons-ig-on, .icons-tw-off, .icons-tw-on, .icons-yt-off, .icons-yt-on {
-  background-image: url('/img/icons-sdd8ce52628.png');
+  background-image: url('../img/icons-sdd8ce52628.png');
   background-repeat: no-repeat;
 }
 
@@ -111,4 +111,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 84, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-yt-on {
   background-position: 0 -700px;
+}
+
+/* line 11, ../sass/screen.scss */
+span {
+  height: 100px;
+  width: 100px;
 }
