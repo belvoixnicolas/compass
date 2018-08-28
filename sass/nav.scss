@@ -1,0 +1,47 @@
+@import '_init';
+
+nav {
+    background: #F62909;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px; 
+    @include box-shadow(#d3d3d3 0px 10px 10px 3px);
+
+    ul {
+        height: 10vh;
+        @include display-flex;
+        @include flex-direction(row);
+        @include flex-wrap(nowrap);
+        @include justify-content(center);
+        @include align-items(center); 
+
+        li {
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            transition: .5S;
+
+            &:hover {
+                background-color: #000;
+
+                a {
+                    text-decoration: underline;
+                }
+            }
+
+            a {
+                @extend ul;
+                padding: 0 20px;
+                @include police($nav, center);
+                color: #fff;
+                text-decoration: none;
+                transition: .5S;
+                vertical-align: middle;
+            }
+
+            @media screen and (max-width: 495px) {
+               width: calc(100vw / 3); 
+               font-size: $nav / 3;
+            }
+        }
+    }
+}
