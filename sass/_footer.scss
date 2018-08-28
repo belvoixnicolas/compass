@@ -4,6 +4,7 @@ footer {
     background: #00008b;
     min-height: 20vh;
     padding: 10px;
+    margin-top: 5vh; 
     @include display-flex;
     @include flex-direction(row);
     @include flex-wrap(wrap);

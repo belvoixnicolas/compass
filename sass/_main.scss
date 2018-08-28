@@ -1,0 +1,128 @@
+@import '_init';
+
+section {
+    max-width: 980px;
+    margin: 10vh auto 0;
+
+    h2 {
+        @include police($sous_titre, left);
+
+        i {
+            margin-right: 1%;
+        }
+    }
+
+    p {
+        @extend h2;
+        font-size: $text;
+        margin: 2vh 0;
+    }
+}
+
+.galerie {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr); 
+    -ms-grid-row-gap: 2vh;
+    grid-row-gap: 2vh;
+    justify-items: center;
+
+    img {
+        height: 150px;
+    }
+
+    figcaption {
+        @include police($nom, left);
+        font-weight: bold;
+
+        span {
+            font-weight: normal;
+            font-size: $text;
+        }
+    }
+
+    @media screen and (max-width: 997px) {
+        -ms-grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr); 
+    }
+
+    @media screen and (max-width: 631px) {
+        -ms-grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);  
+    }
+
+    @media screen and (max-width: 327px) {
+        -ms-grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);  
+    }
+}
+
+iframe {
+    display: block;
+    height: 30vh;
+    width: 50vh;
+    margin: 5vh auto 0;
+    @include border-radius(25px);
+    @include box-shadow(#d3d3d3 0px 0px 20px 3px);
+    transition: .5s;
+
+    &:hover {
+        @include border-radius(0px);
+        width: 100%;
+    }
+}
+
+.image_form {
+    margin-top: 30px;
+  }
+  
+  .image_form img {
+    display: inline-block;
+    width: 480px;
+  }
+  
+  .form {
+    float: right;
+    text-align: center;
+  }
+  
+  .champ {
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 10px
+  }
+  
+  .champ label {
+    height: 30px;
+    margin-left: 5px;
+  }
+  
+  .champ input {
+    border: none;
+    height: 35px;
+    width: 400px;
+  }
+  
+  .champ textarea {
+    border: none;
+    height: 180px;
+    width: 400px;
+  }
+  .fa-comment {
+    position: relative;
+    top: -165px;
+  }
+  
+  .champ label {
+    color: grey;
+  }
+  
+  .bouton {
+    width: 150px;
+    background-color: #750CD9;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 10px 20px 0px grey;
+  }
