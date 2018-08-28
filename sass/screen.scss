@@ -3,12 +3,4 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "_init";
-
-@import "icons/*.png";
-@include all-icons-sprites;
-
-span {
-    height: 100px;
-    width: 100px;
-}
+@import "compass/reset";
