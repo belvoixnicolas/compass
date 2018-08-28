@@ -1,0 +1,19 @@
+@import '_init';
+
+footer {
+    background: #00008b;
+    min-height: 20vh;
+    padding: 10px;
+    @include display-flex;
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include justify-content(space-around);
+    @include align-items(center);
+
+    a {
+        div {
+            height: 100px;
+            width: 100px;
+        }
+    }
+}

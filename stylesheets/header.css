@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 html, body, div, span, applet, object, iframe,
 h1,
 header p, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -9,7 +5,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, nav ul li a, li,
+dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -28,7 +24,7 @@ html {
   line-height: 1;
 }
 
-ol, ul, nav ul li a {
+ol, ul {
   list-style: none;
 }
 
@@ -129,74 +125,4 @@ header p {
   header {
     background-position: center;
   }
-}
-
-nav {
-  background: #F62909;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  -moz-box-shadow: #d3d3d3 0px 10px 10px 3px;
-  -webkit-box-shadow: #d3d3d3 0px 10px 10px 3px;
-  box-shadow: #d3d3d3 0px 10px 10px 3px;
-}
-nav ul, nav ul li a {
-  height: 10vh;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-nav ul li, nav ul li a li {
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
-  transition: .5S;
-}
-nav ul li:hover {
-  background-color: #000;
-}
-nav ul li:hover a {
-  text-decoration: underline;
-}
-nav ul li a {
-  padding: 0 20px;
-  font-family: 'trebuchet MS', 'Roboto', sans-serif;
-  font-size: 22px;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-  transition: .5S;
-  vertical-align: middle;
-}
-@media screen and (max-width: 495px) {
-  nav ul li, nav ul li a li {
-    width: calc(100vw / 3);
-    font-size: 7.33333px;
-  }
-}
-
-footer {
-  background: #00008b;
-  min-height: 20vh;
-  padding: 10px;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-align-items: center;
-  align-items: center;
-}
-footer a div {
-  height: 100px;
-  width: 100px;
 }
